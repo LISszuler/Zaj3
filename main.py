@@ -23,6 +23,15 @@ class Apartment(BaseModel):
     area_m2: float
     rooms: Dict[str, Room]
 
+class ApartamentSettlement(BaseModel):
+    apart : str
+    place: str
+    year: int
+    month: str
+    sum_of_bills: float 
+    sum_of_rent: float 
+    remaining_payment: float    
+
 
 
     @staticmethod
