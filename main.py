@@ -130,3 +130,13 @@ if __name__ == '__main__':
         for transfer in manager.transfers:
             if transfer.tenant == tenant.name:
                 print('  ', transfer.amount_pln, transfer.date, transfer.settlement_year, transfer.settlement_month)
+
+class TenantSettlement(BaseModel):
+    TenantName: str
+    Month: int
+    Year: int
+    Rozliczenie: str
+    Rent: float
+    Bills: float
+    Sum: float
+    Saldo: float
