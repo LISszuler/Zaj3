@@ -24,7 +24,7 @@ class Apartment(BaseModel):
     rooms: Dict[str, Room]
 
 class ApartamentSettlement(BaseModel):
-    apartament : str
+    apart : str
     place: str
     year: int
     month: str
