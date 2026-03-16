@@ -23,6 +23,16 @@ class Apartment(BaseModel):
     area_m2: float
     rooms: Dict[str, Room]
 
+class TenantSettlement(BaseModel):
+    TenantName: str
+    Month: int
+    Year: int
+    Rozliczenie: str
+    Rent: float
+    Bills: float
+    Sum: float
+    Saldo: float
+
     @staticmethod
     def from_json_file(file_path: str) -> Dict[str,'Apartment']:
         data = None
